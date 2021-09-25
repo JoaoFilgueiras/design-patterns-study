@@ -1,0 +1,31 @@
+$color--black: #444444;
+
+$color--primary: #fff2d8;
+$color--primary--border: #a8a8b3;
+
+$color--light: #ffffff;
+$color--light--border: #a8a8b3;
+
+.btn--light--custom {
+    background: $color--light !important;
+    border: 1px solid $color--light--border;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, .5);
+    transition: filter 0.4s;
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+}
+
+
+.btn--primary--custom {
+    background:  $color--primary!important;
+    border: 1px solid $color--primary !important;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, .5);
+    transition: filter 0.4s;
+    color: $color--black !important;
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+}

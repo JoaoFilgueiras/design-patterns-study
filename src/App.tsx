@@ -1,11 +1,14 @@
 import React from 'react';
+import { Routes } from './routes/routes';
+
 import './App.scss';
+import { AuthContextProvider } from './contexts/Auth/AuthContext';
 
 function App() {
     return (
-        <>
-            <h1>App config inicial</h1>
-        </>
+        <AuthContextProvider>
+            <Routes />
+        </AuthContextProvider>
     );
 }
 
